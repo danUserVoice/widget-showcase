@@ -3,7 +3,7 @@
 * 
 * #0B1016 - Glacier Blue
 * #7f76ab - Blue Grey
-* #b78cff - Body Color
+* #00afe6 - Body Color
 *
 * Generate schemes at https://coolors.co
 **********************************************************/
@@ -11,7 +11,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: #b78cff;
+  background-color: #00afe6;
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -20,7 +20,9 @@ body {
   margin: 200px 0px 0px 0px;
 }
 .big-title {
-  font-family: 'Pacifico', cursive;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
   font-size: 50px;
   text-align: center;
   line-height: 120px;
@@ -31,8 +33,16 @@ body {
 .message {
   position: absolute;
   font-size: 30px;
+}
+#stepOne {
   transform: rotate(-45deg);
   top: 472px;
+}
+#stepTwo {
+  position: fixed;
+  bottom: 51px;
+  right: 63px;
+  z-index: 1;
 }
 .main {
   background-color: #0B1016;

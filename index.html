@@ -3,15 +3,17 @@
 <head>
   <title>UserVoice Widget Showcase</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
 <body>
   <div class="big-title">
     - Widget Showcase -
   </div>
-  <div class="big-title message">
+  <div class="big-title message" id="stepOne">
     Choose your experience <span id="arrow">&#10549;</span>
+  </div>
+  <div class="big-title message" id="stepTwo">
+    Click to open<span id="arrow">&#10549;</span>
   </div>
   <div class="main" id="widget-options">
     <ul>
@@ -70,9 +72,9 @@
 
 <span style="color: #75715e">// Global Settings</span>
 <span style="color: #a6e22e">UserVoice</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">push</span><span style="color: #f8f8f2">([</span><span style="color: #e6db74">&#39;set&#39;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">{</span>
-  <span style="color: #a6e22e">accent_color</span><span style="color: #f92672">:</span> <span style="color: #e6db74">&#39;#706993&#39;</span><span style="color: #f8f8f2">,</span> <span style="color: #75715e">// Widget accent color</span>
+  <span style="color: #a6e22e">accent_color</span><span style="color: #f92672">:</span> <span style="color: #e6db74">&#39;#d74119&#39;</span><span style="color: #f8f8f2">,</span> <span style="color: #75715e">// Widget accent color</span>
   <span style="color: #a6e22e">trigger_color</span><span style="color: #f92672">:</span> <span style="color: #e6db74">&#39;#FFF&#39;</span><span style="color: #f8f8f2">,</span>   <span style="color: #75715e">// Trigger symbol color</span>
-  <span style="color: #a6e22e">trigger_background_color</span><span style="color: #f92672">:</span> <span style="color: #e6db74">&#39;#9cb7d8&#39;</span><span style="color: #f8f8f2">,</span> <span style="color: #75715e">// Trigger Background color</span>
+  <span style="color: #a6e22e">trigger_background_color</span><span style="color: #f92672">:</span> <span style="color: #e6db74">&#39;#d74119&#39;</span><span style="color: #f8f8f2">,</span> <span style="color: #75715e">// Trigger Background color</span>
 <span style="color: #f8f8f2">}]);</span>
 
 <span style="color: #75715e">// Add default trigger to the bottom-right corner of the window:</span>
