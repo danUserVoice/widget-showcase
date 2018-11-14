@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UserVoice Widget Showcase</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+</head>
+<body>
+  <div class="main" id="widget-options">
+    <ul>
+      <li><a href="#">Post Idea</a></li>
+      <li><a href="/?mode=nps">Net Promoter Score</a></li>
+      <li><a href="/?mode=smartvote">SmartVote</a></li>
+    </ul>
+  </div>
+
+  <div class="main lower">
+    <ul>
+      <li><a href="#section-code">SEE THE CODE</a></li>
+    </ul>
+  </div>
+
+  <div id="section-code">
+    <div><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #75715e">/* ecmascript 6</span>
+<span style="color: #75715e">* Include the UserVoice JavaScript SDK (only needed once on a page)</span>
+<span style="color: #75715e">*/</span>
+<span style="color: #a6e22e">UserVoice</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">window.</span><span style="color: #a6e22e">UserVoice</span> <span style="color: #f92672">||</span> <span style="color: #f8f8f2">[];</span>
+<span style="color: #f8f8f2">(()</span> <span style="color: #f92672">=&gt;</span> <span style="color: #f8f8f2">{</span>
+  <span style="color: #66d9ef">const</span> <span style="color: #a6e22e">uv</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">document.</span><span style="color: #a6e22e">createElement</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&#39;script&#39;</span><span style="color: #f8f8f2">);</span>
+  <span style="color: #a6e22e">uv</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">type</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&#39;text/javascript&#39;</span><span style="color: #f8f8f2">;</span>
+  <span style="color: #a6e22e">uv</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">async</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">true</span><span style="color: #f8f8f2">;</span>
+  <span style="color: #a6e22e">uv</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">src</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&#39;https://widget.uservoice.com/{{ Javascript API key }}.js&#39;</span><span style="color: #f8f8f2">;</span>
+  <span style="color: #66d9ef">let</span> <span style="color: #a6e22e">s</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">document.</span><span style="color: #a6e22e">getElementsByTagName</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&#39;script&#39;</span><span style="color: #f8f8f2">)[</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">];</span>
+  <span style="color: #a6e22e">s</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">parentNode</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">insertBefore</span><span style="color: #f8f8f2">(</span><span style="color: #a6e22e">uv</span><span style="color: #f8f8f2">,</span><span style="color: #a6e22e">s</span><span style="color: #f8f8f2">);</span>
+<span style="color: #f8f8f2">})();</span>
+
+<span style="color: #75715e">// Global Settings</span>
+<span style="color: #a6e22e">UserVoice</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">push</span><span style="color: #f8f8f2">([</span><span style="color: #e6db74">&#39;set&#39;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">{</span>
+  <span style="color: #a6e22e">accent_color</span><span style="color: #f92672">:</span> <span style="color: #e6db74">&#39;#458dd6&#39;</span><span style="color: #f8f8f2">,</span> <span style="color: #75715e">// Widget accent color</span>
+  <span style="color: #a6e22e">trigger_color</span><span style="color: #f92672">:</span> <span style="color: #e6db74">&#39;#FFF&#39;</span><span style="color: #f8f8f2">,</span>   <span style="color: #75715e">// Trigger symbol color</span>
+  <span style="color: #a6e22e">trigger_background_color</span><span style="color: #f92672">:</span> <span style="color: #e6db74">&#39;#ffa500&#39;</span><span style="color: #f8f8f2">,</span> <span style="color: #75715e">// Trigger Background color</span>
+<span style="color: #f8f8f2">}]);</span>
+
+<span style="color: #75715e">// Add default trigger to the bottom-right corner of the window:</span>
+<span style="color: #a6e22e">UserVoice</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">push</span><span style="color: #f8f8f2">([</span><span style="color: #e6db74">&#39;addTrigger&#39;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">{</span>
+  <span style="color: #a6e22e">mode</span><span style="color: #f92672">:</span> <span style="color: #e6db74">&#39;post_idea&#39;</span><span style="color: #f8f8f2">,</span>
+  <span style="color: #a6e22e">trigger_position</span><span style="color: #f92672">:</span> <span style="color: #e6db74">&#39;bottom-right&#39;</span>
+<span style="color: #f8f8f2">}]);</span>
+</pre></td></tr></table></div>
+
+
+
+
+
+  </div>
+
+  <footer>
+    <p>Widget Showcase | UserVoice</p>
+  </footer>
+
+  <!-- Load external scripts -->
+  <script src="assets/js/uservoice.js"></script>
+
+</body>
+</html>

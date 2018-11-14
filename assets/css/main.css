@@ -1,0 +1,78 @@
+/**********************************************************
+* Color Scheme
+* 
+* #331E38 - Dark Purple
+* #706993 - Dark Blue Grey
+* #7f76ab - Blue Grey
+* #70A0AF - Air Superiority Blue
+* #A0C1B9 - Cambridge Blue
+* #9cb7d8 - Body Color
+*
+* Generate schemes at https://coolors.co
+**********************************************************/
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #9cb7d8;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #FFF;
+  width: 100%;
+  margin: 200px 0px 0px 0px;
+}
+.main {
+  background-color: #706993;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  /*position: relative;*/
+  margin-top: 200px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(25,25,25,0.50);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(25,25,25,0.50);
+  box-shadow: 0px 0px 10px 0px rgba(25,25,25,0.50);
+  padding: 10px;
+  margin: 0 auto;
+}
+.lower {
+  position: relative;
+  margin-top: 30px;
+}
+.main ul {
+  display: contents;
+  list-style: none;
+  margin: 0px;
+  font-size: 20px;
+  line-height: 40px;
+}
+.main ul a {
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  display: block;
+}
+.main ul a:hover {
+  background-color: #7f76ab;
+  border-radius: 3px;
+}
+footer {
+  background-color: #706993;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  line-height: 30px;
+}
+#section-code {
+  background-color: #0B1016;
+  min-width: 300px;
+  width: 80%;
+  padding: 5px;
+  margin: 0 auto;
+  position: relative;
+  top: 1200px;
+  margin-bottom: 100px;
+}

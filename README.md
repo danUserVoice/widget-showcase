@@ -1,1 +1,1 @@
-# widget-showcase
+# Widget Showcase
