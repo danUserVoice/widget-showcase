@@ -3,14 +3,18 @@
 <head>
   <title>UserVoice Widget Showcase</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
 <body>
+  <div class="big-title">
+    - Widget Showcase -
+  </div>
   <div class="main" id="widget-options">
     <ul>
-      <li><a href="#">Post Idea</a></li>
-      <li><a href="/?mode=nps">Net Promoter Score</a></li>
-      <li><a href="/?mode=smartvote">SmartVote</a></li>
+      <li><a href="?mode=postidea">Post Idea</a></li>
+      <li><a href="?mode=nps">Net Promoter Score</a></li>
+      <li><a href="?mode=smartvote">SmartVote (may require incognito)</a></li>
     </ul>
   </div>
 
@@ -21,6 +25,9 @@
   </div>
 
   <div id="section-code">
+    <div class="big-title">
+      - The Code -
+    </div>
     <div><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
  2
  3
@@ -60,20 +67,18 @@
 
 <span style="color: #75715e">// Global Settings</span>
 <span style="color: #a6e22e">UserVoice</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">push</span><span style="color: #f8f8f2">([</span><span style="color: #e6db74">&#39;set&#39;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">{</span>
-  <span style="color: #a6e22e">accent_color</span><span style="color: #f92672">:</span> <span style="color: #e6db74">&#39;#458dd6&#39;</span><span style="color: #f8f8f2">,</span> <span style="color: #75715e">// Widget accent color</span>
+  <span style="color: #a6e22e">accent_color</span><span style="color: #f92672">:</span> <span style="color: #e6db74">&#39;#706993&#39;</span><span style="color: #f8f8f2">,</span> <span style="color: #75715e">// Widget accent color</span>
   <span style="color: #a6e22e">trigger_color</span><span style="color: #f92672">:</span> <span style="color: #e6db74">&#39;#FFF&#39;</span><span style="color: #f8f8f2">,</span>   <span style="color: #75715e">// Trigger symbol color</span>
-  <span style="color: #a6e22e">trigger_background_color</span><span style="color: #f92672">:</span> <span style="color: #e6db74">&#39;#ffa500&#39;</span><span style="color: #f8f8f2">,</span> <span style="color: #75715e">// Trigger Background color</span>
+  <span style="color: #a6e22e">trigger_background_color</span><span style="color: #f92672">:</span> <span style="color: #e6db74">&#39;#9cb7d8&#39;</span><span style="color: #f8f8f2">,</span> <span style="color: #75715e">// Trigger Background color</span>
 <span style="color: #f8f8f2">}]);</span>
 
 <span style="color: #75715e">// Add default trigger to the bottom-right corner of the window:</span>
 <span style="color: #a6e22e">UserVoice</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">push</span><span style="color: #f8f8f2">([</span><span style="color: #e6db74">&#39;addTrigger&#39;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">{</span>
-  <span style="color: #a6e22e">mode</span><span style="color: #f92672">:</span> <span style="color: #e6db74">&#39;post_idea&#39;</span><span style="color: #f8f8f2">,</span>
+  <span style="color: #a6e22e">mode</span><span style="color: #f92672">:</span> <span style="color: #e6db74">&#39;post_idea&#39;</span><span style="color: #f8f8f2">,</span> <span style="color: #75715e">// Other values: satisfaction, smartvote</span>
   <span style="color: #a6e22e">trigger_position</span><span style="color: #f92672">:</span> <span style="color: #e6db74">&#39;bottom-right&#39;</span>
 <span style="color: #f8f8f2">}]);</span>
-</pre></td></tr></table></div>
-
-
-
+</pre></td></tr></table>
+</div>
 
 
   </div>

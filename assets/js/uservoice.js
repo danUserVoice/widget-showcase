@@ -24,12 +24,12 @@ const loadWidget = {
     // Settings
     UserVoice.push(['set', {
       // Options can also be set on specific widgets instead of globally
-      accent_color             : '#458dd6', // Widget accent color
+      accent_color             : '#706993', // Widget accent color
       trigger_color            : 'white',   // Trigger symbol color
       trigger_background_color : '#9cb7d8', // Trigger Background color
       //locale                   : 'en',      // Defaults to your account’s localization
       forum_id                 : '589399',  // Defaults to your account’s default forum
-      smartvote_enabled        : false,     // Enables Smartvote
+      smartvote_enabled        : true,     // Enables Smartvote
       post_suggestion_enabled  : true,      // Ability to post an Idea/Suggestion
       contact_enabled          : false,     // Ability to post a Ticket
       screenshot_enabled       : true,      // Take a screenshot
