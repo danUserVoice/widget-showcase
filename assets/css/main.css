@@ -30,19 +30,13 @@ body {
   max-width: 500px;
   margin: 0 auto;
 }
-.message {
-  position: absolute;
-  font-size: 30px;
-  z-index: 1;
-}
-#stepOne {
-  transform: rotate(-45deg);
-  top: 472px;
-}
-#stepTwo {
-  position: fixed;
-  bottom: 51px;
-  right: 63px;
+#steps {
+  font-size: 24px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 5px;
+  margin-bottom: 10px;
 }
 .main {
   background-color: #0B1016;

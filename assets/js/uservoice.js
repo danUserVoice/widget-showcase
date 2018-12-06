@@ -28,8 +28,8 @@ const loadWidget = {
       trigger_color            : '#FFF',   // Trigger symbol color
       trigger_background_color : '#d74119', // Trigger Background color
       //locale                   : 'en',      // Defaults to your account’s localization
-      forum_id                 : '589399',  // Defaults to your account’s default forum
-      smartvote_enabled        : true,     // Enables Smartvote
+      forum_id                 : '917947',  // Defaults to your account’s default forum
+      smartvote_enabled        : false,     // Enables Smartvote
       post_suggestion_enabled  : true,      // Ability to post an Idea/Suggestion
       contact_enabled          : false,     // Ability to post a Ticket
       screenshot_enabled       : true,      // Take a screenshot
