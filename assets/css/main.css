@@ -17,7 +17,7 @@ body {
   font-weight: 300;
   color: #FFF;
   width: 100%;
-  margin: 200px 0px 0px 0px;
+  margin: 200px 0px 200px 0px;
 }
 .big-title {
   font-family: Arial, sans-serif;
@@ -54,6 +54,7 @@ body {
 .lower {
   position: relative;
   margin-top: 30px;
+  display: none;
 }
 .main ul {
   display: contents;

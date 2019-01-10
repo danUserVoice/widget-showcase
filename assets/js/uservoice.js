@@ -116,12 +116,21 @@ const loadWidget = {
       trigger_position: 'bottom-right'
     }]);
   },
+  customTrigger: () => {
+    document.getElementsByClassName('main lower')[0].style.display = 'block';
+    UserVoice.push(['addTrigger', '#postIdea', {
+      mode: 'post_idea',
+      position: 'right'
+    }]);
+  },
   init: () => {
     loadWidget.sdk(); // Load SDK
     if (/mode=nps/.test(window.location.href)) {
       loadWidget.nps(); // NPS
     } else if (/mode=smartvote/.test(window.location.href)){
       loadWidget.smartvote(); // SmartVote
+    } else if (/mode=ct/.test(window.location.href)){
+      loadWidget.customTrigger(); // Post Idea Custom Trigger
     } else {
       loadWidget.postIdea(); // Post Idea
     }
